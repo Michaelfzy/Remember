@@ -4,7 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -15,8 +16,9 @@ public class Remind extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view =  inflater.inflate(R.layout.fragment_remind, container, false);
-        Button button_call1 = view.findViewById(R.id.buttonx);
-        button_call1.setOnClickListener(new View.OnClickListener() {
+        ImageView Gameimage = view.findViewById(R.id.imageView_playgame);
+        TextView Gametext = view.findViewById(R.id.textView_playgame);
+        Gameimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

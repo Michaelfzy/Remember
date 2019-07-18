@@ -1,46 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Remind">
-
-    <LinearLayout
+    tools:context=".Remind" >
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView_pingtu"
+            android:layout_width="311dp"
+            android:layout_height="311dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/alarm_clock"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_playgame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/buttonx"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
-                android:text="添加提醒事项"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/imageView_playgame"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/playgame"
+            app:layout_constraintBottom_toTopOf="@+id/textView_playgame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_pingtu" />
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/buttonx"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/backgrounds/scenic" />
+        <TextView
+            android:id="@+id/textView_playgame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center|top"
+            android:text="添加提醒事项"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_playgame" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
-</FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/cardView8"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--app:cardCornerRadius="10dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView_pingtu"-->
+    <!--android:layout_width="311dp"-->
+    <!--android:layout_height="311dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="32dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:background="@drawable/pingtu"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/imageView_playgame"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView_playgame"-->
+    <!--android:layout_width="83dp"-->
+    <!--android:layout_height="83dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:background="@drawable/playgame"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/textView_playgame"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView_pingtu" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView_playgame"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:gravity="center|top"-->
+    <!--android:text="开始锻炼记忆吧"-->
+    <!--android:textSize="24sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView_playgame" />-->
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--</androidx.cardview.widget.CardView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--the puzzle layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#ff303537"
+        >
+        <ImageView
+            android:id="@+id/left_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_press"
+            android:layout_marginStart="17dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginEnd="17dp"
+            android:layout_alignBottom="@+id/left_btn"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/score_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="用时："
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0s"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="步数："
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/step"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            />
+    </LinearLayout>
+
+    <com.sendcloud.jigsawpuzzle.view.ScrollGridView
+        android:id="@+id/grid_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:numColumns="3"
+        android:verticalSpacing="5px"
+        android:horizontalSpacing="5px"
+        android:background="@color/white"
+        />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0"
+        android:background="@color/violet"
+        >
+
+        <ImageButton android:background="@drawable/withmusic"
+            android:id="@+id/jingyin"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:onClick="onClick"/>
+
+
+        <ImageButton android:background="@drawable/help"
+            android:id="@+id/help1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:onClick="onClick"/>
+
+
+
+        <ImageButton android:background="@drawable/fanhuiguan"
+            android:id="@+id/guanqia"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:onClick="onClick"/>
+
+
+
+        <ImageButton
+            android:id="@+id/fanhui"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/retrywww"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <ImageView android:id="@+id/image1"
+  android:layout_width="120dip"
+  android:layout_marginLeft="10dip"
+  android:layout_height="160dip"/>
+  
+  <TextView android:id="@+id/textview"
+      android:layout_marginRight="10dip"
+      android:gravity="right|center_vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"/>
+    
+</LinearLayout>

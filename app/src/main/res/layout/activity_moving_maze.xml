@@ -102,10 +102,7 @@
         />
 
 
-
-
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -113,44 +110,45 @@
         android:layout_marginBottom="20dp"
         android:layout_weight="0"
         android:background="@color/violet"
-        >
+        android:orientation="horizontal">
 
-        <ImageButton android:background="@drawable/withmusic"
+        <ImageButton
             android:id="@+id/jingyin"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
             android:layout_marginEnd="20dp"
-            android:onClick="onClick"/>
+            android:layout_weight="1"
+            android:background="@drawable/withmusic"
+            android:onClick="onClick" />
 
 
-        <ImageButton android:background="@drawable/help"
+        <ImageButton
             android:id="@+id/help1"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
             android:layout_marginEnd="20dp"
-            android:onClick="onClick"/>
+            android:layout_weight="1"
+            android:background="@drawable/help"
+            android:onClick="onClick" />
 
 
-
-        <ImageButton android:background="@drawable/fanhuiguan"
+        <ImageButton
             android:id="@+id/guanqia"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
             android:layout_marginEnd="20dp"
-            android:onClick="onClick"/>
-
+            android:layout_weight="1"
+            android:background="@drawable/fanhuiguan"
+            android:onClick="onClick" />
 
 
         <ImageButton
             android:id="@+id/fanhui"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:background="@drawable/retrywww"
             android:layout_weight="1"
-            android:onClick="onClick"/>
+            android:background="@drawable/retrywww"
+            android:onClick="onClick" />
     </LinearLayout>
 
 

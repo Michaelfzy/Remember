@@ -148,7 +148,7 @@
     <color name="khaki">#f0e68c</color> <!-- 黄褐色 -->
     <color name="lightcoral">#f08080</color> <!-- 亮珊瑚色 -->
     <color name="palegoldenrod">#eee8aa</color> <!-- 苍麒麟色 -->
-    <color name="violet">#ee82ee</color> <!-- 紫罗兰色 -->
+    <color name="violet">#FFFFFF</color> <!-- 紫罗兰色 -->
     <color name="darksalmon">#e9967a</color> <!-- 暗肉色 -->
     <color name="lightgreen">#90ee90</color> <!-- 亮绿色 -->
     <color name="darkseagreen">#8fbc8f</color> <!-- 暗海兰色 -->
